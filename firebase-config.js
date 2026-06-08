@@ -17,14 +17,13 @@
 // ============================================================
 
 window.FIREBASE_CONFIG = {
-  // ↓ Firebase 콘솔에서 복사한 내용을 여기에 붙여넣으세요 ↓
-  // apiKey: "AIzaSy...",
-  // authDomain: "your-project.firebaseapp.com",
-  // databaseURL: "https://your-project-default-rtdb.asia-southeast1.firebasedatabase.app",
-  // projectId: "your-project",
-  // storageBucket: "your-project.appspot.com",
-  // messagingSenderId: "...",
-  // appId: "1:..."
+  apiKey: "AIzaSyCw_0uVEZxwwj_68OmV-qxUHaS5vOCzgpw",
+  authDomain: "shopee-okr.firebaseapp.com",
+  databaseURL: "https://shopee-okr-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "shopee-okr",
+  storageBucket: "shopee-okr.appspot.com",
+  messagingSenderId: "108578588478",
+  appId: "1:108578588478:web:58fdad7f69685b24acce6f"
 };
 
 // 위 객체가 비어있으면 대시보드는 "Firebase 연결 필요" 화면을 보여주고,
