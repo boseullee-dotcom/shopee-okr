@@ -1,0 +1,446 @@
+{
+  "objective": "Shopee 주요 5개국 내 캠페인 매출 및 재구매/팔로워 기반 채널 자산을 함께 성장시킨다",
+  "keyResults": [
+    {
+      "id": "KR1",
+      "title": "Shopee 매출 1Q 대비 약 2.5배 수준인 15억원+ 달성",
+      "target": "15억원+"
+    },
+    {
+      "id": "KR2",
+      "title": "5개국 행사기간 ROAS 500%+ 달성",
+      "target": "ROAS 500%+"
+    },
+    {
+      "id": "KR3",
+      "title": "5개국 평균 재주문율 5-6% → 8-9% (PH 4.09% → 6%+ 핵심)",
+      "target": "재주문율 8-9%"
+    },
+    {
+      "id": "KR4",
+      "title": "샵샵 공식샵 팔로워 팬 20K → 40K로 확대",
+      "target": "팔로워 40K"
+    }
+  ],
+  "owners": [
+    "이보슬",
+    "이지수",
+    "마미령"
+  ],
+  "projects": [
+    {
+      "id": "P1",
+      "kr": "KR1",
+      "owner": "이보슬",
+      "icon": "📈",
+      "name": "Shopee Traffic 유입 강화",
+      "description": "키워드 광고·외부 광고(Performance MKT) 믹스 정의",
+      "growthPoint": "쇼피 26년 목표 매출 달성",
+      "why": "이 프로젝트는 유입을 강화하여 전환까지 만든다",
+      "shortName": "매출 관리",
+      "milestones": [
+        {
+          "id": "M1",
+          "title": "국가별 Shopee Ads / CPAS 성과 분석 및 현황 진단",
+          "period": "",
+          "output": "광고 성과 분석 리포트",
+          "status": "진행중",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M2",
+          "title": "국가별 목표 설정 및 예산 분배",
+          "period": "",
+          "output": "광고 성과 분석 리포트",
+          "status": "대기",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M3",
+          "title": "Mega Campaign 기반 광고 운영 최적화 (6.6 / 7.7 대응)",
+          "period": "",
+          "output": "캠페인 운영 리포트",
+          "status": "대기",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M4",
+          "title": "국가별 광고 효율 리뷰 및 ROAS 운영 프로토콜 정리",
+          "period": "",
+          "output": "최종 광고 운영 가이드",
+          "status": "대기",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "kr": "KR1",
+      "owner": "이지수",
+      "icon": "⚡",
+      "name": "전환율 개선",
+      "description": "PDP·체크아웃 UX 개선 + 번들·할인 구조 최적화",
+      "growthPoint": "전환율을 상승시켜 불필요한 광고비를 줄이고 매출 달성에 기여한다",
+      "why": "전환율 제고로 매출 효율을 극대화한다",
+      "shortName": "전환율 제고",
+      "milestones": [
+        {
+          "id": "M1",
+          "title": "Shopee 전환율 현황 데이터 수집 & PDP·체크아웃 단계별 이탈 구간 분석",
+          "period": "5/18 → 5/27",
+          "output": "Raw 데이터(시트) + 분석 데이터(시트)",
+          "status": "대기",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M2",
+          "title": "경쟁사 PDP/프로모션 벤치마킹 & 상품 상세페이지 구성 개선안 작성",
+          "period": "5/27 → 6/10",
+          "output": "PDP 기획안(피그마)",
+          "status": "대기",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M3",
+          "title": "PDP 개선안 적용 및 상품페이지 업데이트 & 적용 후 전환율 성과 측정·개선 효과 분석",
+          "period": "6/24 → 6/30",
+          "output": "쇼피 판매 링크 + 분석 데이터(시트)",
+          "status": "대기",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "kr": "KR2",
+      "owner": "이보슬",
+      "icon": "🌏",
+      "name": "Global Winning 소재 운영",
+      "description": "Global Winning 소재 공유 및 동남아 지역 적용 Protocol 수립",
+      "growthPoint": "광고비 효율화로 인한 영업이익 안정화",
+      "why": "효율을 기반으로 행사 시 목표를 달성한다",
+      "shortName": "효율 관리",
+      "milestones": [
+        {
+          "id": "M1",
+          "title": "국가별 경쟁사 광고 소재 및 배너 레퍼런스 수집",
+          "period": "",
+          "output": "소재 벤치마킹 시트",
+          "status": "대기",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M2",
+          "title": "국가별 트렌드 기반 Winning 소재 유형 분석 및 정리",
+          "period": "",
+          "output": "Winning 소재 아카이빙",
+          "status": "대기",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M3",
+          "title": "국가별 소재 A/B 테스트 및 CTR/CVR 성과 검증",
+          "period": "",
+          "output": "테스트 결과 리포트",
+          "status": "대기",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M4",
+          "title": "동남아 공통 활용 가능한 소재 운영 Protocol 및 가이드 구축",
+          "period": "",
+          "output": "최종 광고 운영 가이드",
+          "status": "대기",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "kr": "KR3",
+      "owner": "이지수",
+      "icon": "🔁",
+      "name": "재구매율 제고 방안 수립",
+      "description": "재구매 전환 상품 기획(번들·GWP) / 자동화 리텐션 메시지 플로우 구축(EDM 탬플릿, A/B 테스트)",
+      "growthPoint": "국가별 평균 재주문율을 끌어 올려 안정적인 매출과 충성 고객을 만든다",
+      "why": "재구매율 제고로 고객 LTV를 높인다",
+      "shortName": "재구매율 제고",
+      "milestones": [
+        {
+          "id": "M1",
+          "title": "5개국 재주문율·캠페인 매출 현황 데이터 수집 & 분석",
+          "period": "5/18 → 5/22",
+          "output": "Raw 데이터 + 분석 데이터(시트)",
+          "status": "완료",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M2",
+          "title": "재구매 전환 상품 기획 및 메시지 플로우 설계",
+          "period": "5/25 → 5/29",
+          "output": "분석 데이터 + 운영 기획안(시트)",
+          "status": "완료",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M3",
+          "title": "재구매 유도 번들·GWP 구성안 기획 및 세팅",
+          "period": "5/26 → 6/15",
+          "output": "운영 기획안 + 쇼피 판매 링크",
+          "status": "완료",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M4",
+          "title": "EDM 탬플릿 제작·A/B 테스트안 수립 & 재주문율·매출 성과 분석",
+          "period": "6/1 → 6/19",
+          "output": "운영 기획안 + 분석 데이터(시트)",
+          "status": "지연",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "kr": "KR3",
+      "owner": "이지수",
+      "icon": "🔍",
+      "name": "재구매 패턴 분석",
+      "description": "국가별 재구매 세그먼트 & 타이밍 분석 (1회/2회+/휴면 → D+30/D+60 최적화)",
+      "growthPoint": "세그먼트별 최적 타이밍 발굴로 리텐션 효율 극대화",
+      "why": "데이터 기반 세그먼트 분류로 리텐션 액션의 정확도를 높인다",
+      "shortName": "재구매 패턴 분석",
+      "milestones": [
+        {
+          "id": "M1",
+          "title": "5개국 고객 구매 이력 Raw 데이터 추출 & 고객 세그먼트 분류",
+          "period": "5/18 → 5/22",
+          "output": "Raw 데이터 + 분석 데이터(시트)",
+          "status": "완료",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M2",
+          "title": "구매 횟수·재구매 기간 기준 고객 세그먼트 분류 & D+30/D+60 재구매 패턴 분석",
+          "period": "5/25 → 5/29",
+          "output": "분석 데이터(시트)",
+          "status": "완료",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M3",
+          "title": "세그먼트별 리텐션 메시지 발송 타이밍 기준 수립 (P1 연계)",
+          "period": "6/1 → 6/1",
+          "output": "P1 Task 5 산출물 동일",
+          "status": "완료",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "kr": "KR4",
+      "owner": "마미령",
+      "icon": "🎁",
+      "name": "고객 혜택 설계",
+      "description": "팔로워 즉시 혜택 설계(웰컴 쿠폰·포인트·전용 할인코드) + 국가별 멤버십 설정 및 샵 팔로워 혜택 강화",
+      "growthPoint": "혜택 강화로 팔로우 전환율 상승",
+      "why": "팔로워의 즉시 혜택 체감으로 채널 자산 성장 가속",
+      "shortName": "고객 혜택 설계",
+      "milestones": [
+        {
+          "id": "M1",
+          "title": "5개국 CS AI 응대 가이드 & Shop Follow 고객 비정기 쿠폰·혜택 안내 운영",
+          "period": "5/18 → 5/22",
+          "output": "CS AI 응대 가이드",
+          "status": "완료",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M2",
+          "title": "Shop Follow 행사 기획 & 배너 제작·세팅 & Shop Membership Tier 기획안",
+          "period": "5/25 → 5/29",
+          "output": "Google Form + 5개국 배너 + Membership card 기획안",
+          "status": "진행중",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M3",
+          "title": "Chat Broadcast Shop Follow Voucher 발송 & TW/VN Shop Membership 세팅·혜택 구성",
+          "period": "6/1 → 6/12",
+          "output": "Chat Broadcast + Brand membership(TW/VN)",
+          "status": "진행중",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M4",
+          "title": "SG/MY/PH Shop Membership 세팅 및 혜택 구성",
+          "period": "6/15 → 6/19",
+          "output": "Brand membership(SG/MY/PH)",
+          "status": "진행중",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M5",
+          "title": "Instagram 등 SNS 채널 연계 Shop Follow 인증 캡처 기반 추첨형 Giveaway 이벤트 검토",
+          "period": "6/22 → 6/26",
+          "output": "SNS 콘텐츠",
+          "status": "대기",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M6",
+          "title": "SNS 팔로워 이벤트 관련 게시물 기획안 작성",
+          "period": "6/22 → 6/26",
+          "output": "피그마",
+          "status": "대기",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "P7",
+      "kr": "KR4",
+      "owner": "마미령",
+      "icon": "📡",
+      "name": "라이브 관리",
+      "description": "라이브/Affiliate 팔로우 전환 인센티브 및 라이브 CTA 강화 — Affiliate 가이드 배포 + 라이브 시 팔로우 유도 이벤트 진행",
+      "growthPoint": "라이브·Affiliate 콘텐츠를 통한 팔로우 전환율 상승",
+      "why": "콘텐츠 채널 CTA 강화로 팔로우 자산 확대",
+      "shortName": "라이브 관리",
+      "milestones": [
+        {
+          "id": "M1",
+          "title": "5개국 SNS 콘텐츠 레퍼런스 확인 & KOL 리스트업 + SNS 콘텐츠 가이드 내 Shop Follow 유도 문구·CTA 반영",
+          "period": "5/12 → 5/22",
+          "output": "AMS 진행 현황 시트 + PDF/PNG",
+          "status": "진행중",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M2",
+          "title": "5개국 Affiliate 콘텐츠용 Shop Follow 유도 문구/링크 가이드 정리",
+          "period": "5/18 → 5/22",
+          "output": "PDF or PNG",
+          "status": "진행중",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M3",
+          "title": "5개국 라이브 진행 시 Shop Follow 유도 Giveaway 이벤트 & Tier별 이벤트 혜택·증정 구성 세분화",
+          "period": "5/25 → 6/5",
+          "output": "데이터 시트(×2)",
+          "status": "진행중",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "P8",
+      "kr": "KR4",
+      "owner": "마미령",
+      "icon": "📊",
+      "name": "팔로워 모니터링",
+      "description": "국가별 주간 팔로워 증감 모니터링 - 주요 캠페인(페이데이, 더블데이) 전후 팔로워 유입 효과 측정",
+      "growthPoint": "주간 모니터링으로 채널 자산 변동성 관리",
+      "why": "데이터 기반 의사결정으로 40K 달성 경로 확보",
+      "shortName": "팔로워 모니터링",
+      "milestones": [
+        {
+          "id": "M1",
+          "title": "5개국 채널별 Shop Follow 증감 현황 트래킹 시트",
+          "period": "5/18 → 5/20",
+          "output": "데이터 시트",
+          "status": "완료",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M2",
+          "title": "5개국 Mini Spike Day 캠페인 전후 성과 및 기입용 트래킹 시트",
+          "period": "6/1 → 6/2",
+          "output": "데이터 시트",
+          "status": "완료",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M3",
+          "title": "5개국 Double Day 캠페인 전후 성과 및 기입용 트래킹 시트",
+          "period": "6/2 → 6/2",
+          "output": "데이터 시트",
+          "status": "완료",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        },
+        {
+          "id": "M4",
+          "title": "5개국 라이브 진행 전후 성과 및 기입용 트래킹 시트",
+          "period": "6/8 → 6/10",
+          "output": "데이터 시트",
+          "status": "완료",
+          "deliverables": "",
+          "links": "",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}
