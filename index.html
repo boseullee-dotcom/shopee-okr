@@ -34,180 +34,63 @@
   .app { display: flex; height: 100vh; overflow: hidden; }
 
   /* ====== Sidebar ====== */
-  .sidebar {
-    width: 280px;
-    background: var(--sidebar);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-  }
-  .sb-brand {
-    padding: 20px 20px 16px;
-    border-bottom: 1px solid #2F3851;
-  }
-  .sb-brand h1 {
-    font-size: 18px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .sb-brand .badge {
-    background: var(--shopee);
-    color: #fff;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 11px;
-    font-weight: 600;
-  }
-  .sb-brand p {
-    color: #9CA3AF;
-    font-size: 12px;
-    margin-top: 4px;
-  }
+  .sidebar { width: 280px; background: var(--sidebar); color: #fff; display: flex; flex-direction: column; flex-shrink: 0; }
+  .sb-brand { padding: 20px 20px 16px; border-bottom: 1px solid #2F3851; }
+  .sb-brand h1 { font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+  .sb-brand p { color: #9CA3AF; font-size: 12px; margin-top: 4px; }
+
+  .sb-identity { padding: 12px 16px; border-bottom: 1px solid #2F3851; background: rgba(255,255,255,0.03); }
+  .sb-identity label { display: block; font-size: 11px; color: #9CA3AF; font-weight: 600; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.06em;}
+  .sb-identity select { width: 100%; background: var(--sidebar-soft); color: #fff; border: 1px solid #3A445C; padding: 8px 10px; border-radius: 6px; font-size: 13px; font-family: inherit; font-weight: 600; cursor: pointer; }
+  .sb-identity .hint { font-size: 11px; color: #9CA3AF; margin-top: 6px; line-height: 1.4; }
+  .sb-identity .hint b { color: #FBBF24; }
+
   .sb-nav { flex: 1; overflow-y: auto; padding: 12px 0; }
-  .sb-home {
-    margin: 0 12px 8px;
-    padding: 10px 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    color: #E5E7EB;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: background 0.15s;
-  }
+  .sb-home { margin: 0 12px 8px; padding: 10px 12px; border-radius: 8px; cursor: pointer; font-weight: 600; color: #E5E7EB; display: flex; align-items: center; gap: 10px; transition: background 0.15s; }
   .sb-home:hover { background: var(--sidebar-soft); }
   .sb-home.active { background: var(--shopee); color: #fff; }
-  .sb-owner {
-    margin-top: 6px;
-  }
-  .sb-owner-head {
-    padding: 8px 22px 6px;
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: #9CA3AF;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .sb-owner-head .avatar {
-    width: 22px; height: 22px; border-radius: 50%;
-    display: inline-flex; align-items: center; justify-content: center;
-    font-size: 11px; font-weight: 700; color: #fff;
-  }
-  .sb-project {
-    margin: 2px 12px;
-    padding: 8px 12px 8px 42px;
-    border-radius: 6px;
-    cursor: pointer;
-    color: #CBD5E1;
-    font-size: 13px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: background 0.15s, color 0.15s;
-  }
+  .sb-owner { margin-top: 6px; }
+  .sb-owner-head { padding: 8px 22px 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #9CA3AF; display: flex; align-items: center; gap: 8px; }
+  .sb-owner-head .avatar { width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: #fff; }
+  .sb-owner-head .me-tag { background: #FBBF24; color: #1E2433; padding: 1px 6px; border-radius: 4px; font-size: 10px; margin-left: 4px; }
+  .sb-project { margin: 2px 12px; padding: 8px 12px 8px 42px; border-radius: 6px; cursor: pointer; color: #CBD5E1; font-size: 13px; display: flex; align-items: center; gap: 8px; transition: background 0.15s, color 0.15s; }
   .sb-project:hover { background: var(--sidebar-soft); color: #fff; }
   .sb-project.active { background: var(--shopee); color: #fff; }
   .sb-project .ic { font-size: 14px; }
   .sb-project .nm { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .sb-project .pct {
-    font-size: 11px;
-    opacity: 0.85;
-    background: rgba(255,255,255,0.1);
-    padding: 1px 6px;
-    border-radius: 8px;
-  }
-  .sb-tools {
-    border-top: 1px solid #2F3851;
-    padding: 12px;
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-  }
-  .sb-tools button {
-    flex: 1;
-    min-width: 70px;
-    background: var(--sidebar-soft);
-    color: #E5E7EB;
-    border: none;
-    padding: 7px 8px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 12px;
-    transition: background 0.15s;
-  }
+  .sb-project .pct { font-size: 11px; opacity: 0.85; background: rgba(255,255,255,0.1); padding: 1px 6px; border-radius: 8px; }
+  .sb-project.editable .nm::after { content: ' ✏️'; opacity: 0.7; }
+
+  .sb-tools { border-top: 1px solid #2F3851; padding: 12px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .sb-tools button { flex: 1; min-width: 70px; background: var(--sidebar-soft); color: #E5E7EB; border: none; padding: 7px 8px; border-radius: 6px; cursor: pointer; font-size: 12px; transition: background 0.15s; font-family: inherit;}
   .sb-tools button:hover { background: #3A445C; }
   .sb-tools button.danger:hover { background: var(--red); color: #fff; }
+  .sb-tools button.primary { background: var(--shopee); color: #fff; }
+  .sb-tools button.primary:hover { background: var(--shopee-dark); }
 
   /* ====== Main ====== */
-  .main {
-    flex: 1;
-    overflow-y: auto;
-  }
-  .topbar {
-    background: #fff;
-    border-bottom: 1px solid var(--border);
-    padding: 14px 28px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-  .topbar .crumb {
-    font-size: 13px;
-    color: var(--muted);
-  }
+  .main { flex: 1; overflow-y: auto; }
+  .topbar { background: #fff; border-bottom: 1px solid var(--border); padding: 14px 28px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 10; }
+  .topbar .crumb { font-size: 13px; color: var(--muted); }
   .topbar .crumb b { color: var(--text); font-weight: 600; }
-  .save-indicator {
-    font-size: 12px;
-    color: var(--muted);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .save-indicator .dot {
-    width: 8px; height: 8px; border-radius: 50%;
-    background: var(--green);
-  }
+  .topbar-actions { display: flex; gap: 10px; align-items: center; }
+  .sync-status { font-size: 12px; display: flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 999px; background: #F1F5F9; color: var(--muted); font-weight: 600;}
+  .sync-status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gray); }
+  .sync-status.synced { background: #DCFCE7; color: #065F46; }
+  .sync-status.synced .dot { background: var(--green); }
+  .sync-status.saving { background: #DBEAFE; color: #1E40AF; }
+  .sync-status.saving .dot { background: var(--blue); animation: pulse 1.5s infinite; }
+  .sync-status.error { background: #FEE2E2; color: #991B1B; }
+  .sync-status.error .dot { background: var(--red); }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+
   .content { padding: 24px 28px 60px; max-width: 1280px; margin: 0 auto; }
 
   /* ====== Home ====== */
-  .obj-banner {
-    background: linear-gradient(135deg, #EE4D2D 0%, #F97316 100%);
-    color: #fff;
-    padding: 24px 28px;
-    border-radius: 16px;
-    margin-bottom: 24px;
-    box-shadow: 0 4px 14px rgba(238,77,45,0.25);
-  }
-  .obj-banner .label {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    opacity: 0.9;
-    text-transform: uppercase;
-  }
-  .obj-banner h2 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 6px;
-    line-height: 1.4;
-  }
-  .obj-banner .obj-meta {
-    margin-top: 16px;
-    display: flex;
-    gap: 24px;
-    font-size: 13px;
-    opacity: 0.95;
-  }
+  .obj-banner { background: linear-gradient(135deg, #EE4D2D 0%, #F97316 100%); color: #fff; padding: 24px 28px; border-radius: 16px; margin-bottom: 24px; box-shadow: 0 4px 14px rgba(238,77,45,0.25); }
+  .obj-banner .label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; opacity: 0.9; text-transform: uppercase; }
+  .obj-banner h2 { font-size: 20px; font-weight: 700; margin-top: 6px; line-height: 1.4; }
+  .obj-banner .obj-meta { margin-top: 16px; display: flex; gap: 24px; font-size: 13px; opacity: 0.95; flex-wrap: wrap;}
   .obj-banner .obj-meta b { font-size: 18px; font-weight: 700; }
   .obj-banner .obj-meta span { display: block; opacity: 0.85; font-size: 11px; margin-top: 2px; }
 
@@ -219,425 +102,154 @@
     .row.owners { grid-template-columns: 1fr; }
   }
 
-  .card {
-    background: var(--card);
-    border-radius: 12px;
-    padding: 18px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-    border: 1px solid var(--border);
-  }
-  .card h3 {
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 12px;
-    color: var(--text);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .card h3 .tag {
-    background: var(--shopee-soft);
-    color: var(--shopee);
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 11px;
-    font-weight: 700;
-  }
+  .card { background: var(--card); border-radius: 12px; padding: 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); border: 1px solid var(--border); }
+  .card h3 { font-size: 14px; font-weight: 700; margin-bottom: 12px; color: var(--text); display: flex; align-items: center; gap: 8px; }
+  .card h3 .tag { background: var(--shopee-soft); color: var(--shopee); padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; }
 
-  .kr-card .kr-title {
-    font-size: 13px;
-    color: var(--text);
-    font-weight: 600;
-    min-height: 38px;
-    line-height: 1.4;
-    margin-bottom: 10px;
-  }
-  .kr-card .kr-target {
-    font-size: 11px;
-    color: var(--muted);
-    margin-bottom: 12px;
-  }
+  .kr-card .kr-title { font-size: 13px; color: var(--text); font-weight: 600; min-height: 38px; line-height: 1.4; margin-bottom: 10px; }
+  .kr-card .kr-target { font-size: 11px; color: var(--muted); margin-bottom: 12px; }
   .kr-card .kr-target b { color: var(--shopee); font-weight: 700; }
 
-  .progress {
-    width: 100%; height: 8px;
-    background: #F1F5F9;
-    border-radius: 999px;
-    overflow: hidden;
-  }
-  .progress .bar {
-    height: 100%;
-    background: linear-gradient(90deg, var(--shopee), #F97316);
-    border-radius: 999px;
-    transition: width 0.4s ease;
-  }
+  .progress { width: 100%; height: 8px; background: #F1F5F9; border-radius: 999px; overflow: hidden; }
+  .progress .bar { height: 100%; background: linear-gradient(90deg, var(--shopee), #F97316); border-radius: 999px; transition: width 0.4s ease; }
   .progress.thin { height: 6px; }
-  .progress.tiny { height: 4px; }
 
-  .kr-card .kr-stats {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    font-size: 11px;
-    color: var(--muted);
-  }
+  .kr-card .kr-stats { display: flex; justify-content: space-between; margin-top: 10px; font-size: 11px; color: var(--muted); }
   .kr-card .kr-stats b { color: var(--text); font-weight: 700; }
 
-  /* Owner card with donut */
-  .owner-card {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-  }
+  .owner-card { display: flex; gap: 16px; align-items: center; }
   .donut-wrap { position: relative; width: 80px; height: 80px; flex-shrink: 0; }
   .donut-wrap svg { transform: rotate(-90deg); }
-  .donut-wrap .donut-text {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text);
-  }
+  .donut-wrap .donut-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: 700; color: var(--text); }
   .owner-info { flex: 1; }
-  .owner-info .name {
-    font-size: 16px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .owner-info .name .av {
-    width: 28px; height: 28px; border-radius: 50%;
-    display: inline-flex; align-items: center; justify-content: center;
-    color: #fff; font-size: 13px; font-weight: 700;
-  }
-  .owner-info .meta {
-    font-size: 12px;
-    color: var(--muted);
-    margin-top: 4px;
-  }
+  .owner-info .name { font-size: 16px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+  .owner-info .name .av { width: 28px; height: 28px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #fff; font-size: 13px; font-weight: 700; }
+  .owner-info .meta { font-size: 12px; color: var(--muted); margin-top: 4px; }
   .owner-info .meta b { color: var(--text); font-weight: 600; }
-  .owner-info .task-stats {
-    margin-top: 8px;
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-  .pill {
-    font-size: 11px;
-    padding: 2px 8px;
-    border-radius: 999px;
-    background: #F1F5F9;
-    color: var(--muted);
-    font-weight: 600;
-  }
+  .owner-info .task-stats { margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill { font-size: 11px; padding: 2px 8px; border-radius: 999px; background: #F1F5F9; color: var(--muted); font-weight: 600; }
   .pill.green { background: #DCFCE7; color: #065F46; }
   .pill.yellow { background: #FEF3C7; color: #92400E; }
   .pill.red { background: #FEE2E2; color: #991B1B; }
   .pill.gray { background: #F1F5F9; color: #475569; }
   .pill.blue { background: #DBEAFE; color: #1E40AF; }
 
-  /* Project table */
   .proj-table { width: 100%; border-collapse: collapse; }
-  .proj-table th, .proj-table td {
-    padding: 12px 12px;
-    text-align: left;
-    border-bottom: 1px solid var(--border);
-    font-size: 13px;
-    vertical-align: middle;
-  }
-  .proj-table th {
-    background: #F8FAFC;
-    font-weight: 600;
-    color: var(--muted);
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-  }
+  .proj-table th, .proj-table td { padding: 12px 12px; text-align: left; border-bottom: 1px solid var(--border); font-size: 13px; vertical-align: middle; }
+  .proj-table th { background: #F8FAFC; font-weight: 600; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
   .proj-table tr.clickable { cursor: pointer; }
   .proj-table tr.clickable:hover { background: #FAFBFC; }
   .proj-table .nm { font-weight: 600; color: var(--text); }
   .proj-table .nm .ic { margin-right: 6px; }
-  .proj-table .pcell {
-    display: flex; align-items: center; gap: 10px;
-    min-width: 160px;
-  }
+  .proj-table .pcell { display: flex; align-items: center; gap: 10px; min-width: 160px; }
   .proj-table .pcell .progress { flex: 1; }
   .proj-table .pcell .pct { font-size: 12px; font-weight: 600; min-width: 36px; text-align: right; }
 
   /* ====== Project page ====== */
-  .proj-header {
-    background: #fff;
-    border-radius: 16px;
-    padding: 24px 28px;
-    border: 1px solid var(--border);
-    margin-bottom: 20px;
-  }
-  .proj-header .ph-top {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    align-items: flex-start;
-  }
-  .proj-header h2 {
-    font-size: 22px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 6px;
-  }
-  .proj-header .sub {
-    color: var(--muted);
-    font-size: 13px;
-    line-height: 1.5;
-  }
-  .proj-header .ph-meta {
-    display: flex; gap: 16px; flex-wrap: wrap;
-    margin-top: 14px;
-  }
-  .proj-header .ph-meta .item {
-    font-size: 12px;
-    color: var(--muted);
-  }
-  .proj-header .ph-meta .item b {
-    display: block;
-    color: var(--text);
-    font-size: 13px;
-    margin-top: 2px;
-    font-weight: 600;
-  }
-  .proj-header .progress-block {
-    min-width: 180px;
-  }
-  .proj-header .progress-block .pct {
-    font-size: 28px; font-weight: 700; color: var(--shopee);
-    margin-bottom: 4px;
-  }
-  .proj-header .progress-block .label {
-    font-size: 11px; color: var(--muted);
-    text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600;
-  }
+  .proj-header { background: #fff; border-radius: 16px; padding: 24px 28px; border: 1px solid var(--border); margin-bottom: 20px; }
+  .proj-header .ph-top { display: flex; justify-content: space-between; gap: 24px; align-items: flex-start; }
+  .proj-header h2 { font-size: 22px; font-weight: 700; display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+  .proj-header .sub { color: var(--muted); font-size: 13px; line-height: 1.5; }
+  .proj-header .ph-meta { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 14px; }
+  .proj-header .ph-meta .item { font-size: 12px; color: var(--muted); }
+  .proj-header .ph-meta .item b { display: block; color: var(--text); font-size: 13px; margin-top: 2px; font-weight: 600; }
+  .proj-header .progress-block { min-width: 180px; }
+  .proj-header .progress-block .pct { font-size: 28px; font-weight: 700; color: var(--shopee); margin-bottom: 4px; }
+  .proj-header .progress-block .label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
 
-  .info-grid {
-    margin-top: 16px;
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    gap: 0;
-    border-top: 1px solid var(--border);
-  }
-  .info-grid .k, .info-grid .v {
-    padding: 10px 12px;
-    border-bottom: 1px solid var(--border);
-    font-size: 13px;
-  }
-  .info-grid .k {
-    background: #F8FAFC;
-    font-weight: 600;
-    color: var(--muted);
-  }
+  .read-only-banner { background: #F1F5F9; border: 1px solid #CBD5E1; color: #475569; padding: 10px 16px; border-radius: 10px; font-size: 13px; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .read-only-banner b { color: #1E293B; }
+
+  .info-grid { margin-top: 16px; display: grid; grid-template-columns: 120px 1fr; gap: 0; border-top: 1px solid var(--border); }
+  .info-grid .k, .info-grid .v { padding: 10px 12px; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .info-grid .k { background: #F8FAFC; font-weight: 600; color: var(--muted); }
   .info-grid .v { color: var(--text); }
 
-  /* Milestones */
   .ms-list { display: flex; flex-direction: column; gap: 14px; }
-  .ms-card {
-    background: #fff;
-    border-radius: 12px;
-    border: 1px solid var(--border);
-    overflow: hidden;
-    transition: box-shadow 0.15s;
-  }
+  .ms-card { background: #fff; border-radius: 12px; border: 1px solid var(--border); overflow: hidden; transition: box-shadow 0.15s; }
   .ms-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-  .ms-head {
-    padding: 14px 18px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    cursor: pointer;
-    background: #FAFBFC;
-    border-bottom: 1px solid var(--border);
-  }
-  .ms-head .chev {
-    color: var(--muted);
-    font-size: 12px;
-    transition: transform 0.2s;
-  }
+  .ms-head { padding: 14px 18px; display: flex; align-items: center; gap: 12px; cursor: pointer; background: #FAFBFC; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  .ms-head .chev { color: var(--muted); font-size: 12px; transition: transform 0.2s; }
   .ms-card.open .ms-head .chev { transform: rotate(90deg); }
-  .ms-head .ms-id {
-    background: var(--shopee);
-    color: #fff;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 4px 10px;
-    border-radius: 6px;
-  }
-  .ms-head .ms-title {
-    flex: 1;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--text);
-  }
-  .ms-head .ms-period {
-    font-size: 12px;
-    color: var(--muted);
-  }
-  .ms-body {
-    padding: 18px;
-    display: none;
-  }
+  .ms-head .ms-id { background: var(--shopee); color: #fff; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 6px; }
+  .ms-head .ms-title { flex: 1; font-size: 14px; font-weight: 600; color: var(--text); min-width: 200px; }
+  .ms-head .ms-period { font-size: 12px; color: var(--muted); }
+  .ms-body { padding: 18px; display: none; }
   .ms-card.open .ms-body { display: block; }
 
-  .ms-meta {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin-bottom: 16px;
-  }
-  .ms-meta .field {
-    background: #F8FAFC;
-    padding: 10px 12px;
-    border-radius: 8px;
-  }
-  .ms-meta .field label {
-    display: block;
-    font-size: 11px;
-    color: var(--muted);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    margin-bottom: 4px;
-  }
-  .ms-meta .field input,
-  .ms-meta .field select {
-    width: 100%;
-    background: transparent;
-    border: none;
-    font-size: 13px;
-    color: var(--text);
-    font-weight: 600;
-    font-family: inherit;
-  }
-  .ms-meta .field input:focus,
-  .ms-meta .field select:focus {
-    outline: none;
-  }
-  .ms-meta .field.status-field select {
-    cursor: pointer;
-  }
+  .ms-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 16px; }
+  .ms-meta .field { background: #F8FAFC; padding: 10px 12px; border-radius: 8px; }
+  .ms-meta .field label { display: block; font-size: 11px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px; }
+  .ms-meta .field input, .ms-meta .field select { width: 100%; background: transparent; border: none; font-size: 13px; color: var(--text); font-weight: 600; font-family: inherit; }
+  .ms-meta .field input:focus, .ms-meta .field select:focus { outline: none; }
+  .ms-meta .field.status-field select { cursor: pointer; }
+  .ms-meta .field input:disabled, .ms-meta .field select:disabled { color: var(--muted); cursor: not-allowed; opacity: 0.85; }
 
   .field-block { margin-bottom: 16px; }
-  .field-block label {
-    display: block;
-    font-size: 12px;
-    color: var(--muted);
-    font-weight: 600;
-    margin-bottom: 6px;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-  }
-  .field-block textarea,
-  .field-block input[type=text] {
-    width: 100%;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 10px 12px;
-    font-size: 13px;
-    font-family: inherit;
-    color: var(--text);
-    background: #fff;
-    resize: vertical;
-    line-height: 1.6;
-  }
-  .field-block textarea:focus,
-  .field-block input[type=text]:focus {
-    outline: none;
-    border-color: var(--shopee);
-    box-shadow: 0 0 0 3px rgba(238,77,45,0.1);
-  }
+  .field-block label { display: block; font-size: 12px; color: var(--muted); font-weight: 600; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .field-block textarea, .field-block input[type=text] { width: 100%; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; font-size: 13px; font-family: inherit; color: var(--text); background: #fff; resize: vertical; line-height: 1.6; }
+  .field-block textarea:focus, .field-block input[type=text]:focus { outline: none; border-color: var(--shopee); box-shadow: 0 0 0 3px rgba(238,77,45,0.1); }
   .field-block textarea { min-height: 90px; }
   .field-block textarea.big { min-height: 140px; }
+  .field-block textarea:disabled, .field-block input:disabled { background: #F8FAFC; color: var(--muted); cursor: not-allowed; }
 
-  .status-badge {
-    display: inline-flex; align-items: center; gap: 6px;
-    font-size: 12px; font-weight: 600;
-    padding: 4px 10px; border-radius: 999px;
-  }
-  .status-badge::before {
-    content: ''; width: 6px; height: 6px; border-radius: 50%;
-    background: currentColor;
-  }
+  .status-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; }
+  .status-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
   .status-완료 { background: #DCFCE7; color: #065F46; }
   .status-진행중 { background: #FEF3C7; color: #92400E; }
   .status-지연 { background: #FEE2E2; color: #991B1B; }
   .status-대기 { background: #F1F5F9; color: #475569; }
 
-  .actions {
-    display: flex; gap: 8px; flex-wrap: wrap;
-    margin-top: 12px;
-  }
-  .btn {
-    padding: 8px 14px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    background: #fff;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--text);
-    transition: all 0.15s;
-    font-family: inherit;
-  }
-  .btn:hover { border-color: var(--shopee); color: var(--shopee); }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .btn { padding: 8px 14px; border-radius: 8px; border: 1px solid var(--border); background: #fff; cursor: pointer; font-size: 13px; font-weight: 600; color: var(--text); transition: all 0.15s; font-family: inherit; }
+  .btn:hover:not(:disabled) { border-color: var(--shopee); color: var(--shopee); }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
   .btn.primary { background: var(--shopee); color: #fff; border-color: var(--shopee); }
-  .btn.primary:hover { background: var(--shopee-dark); border-color: var(--shopee-dark); color: #fff; }
+  .btn.primary:hover:not(:disabled) { background: var(--shopee-dark); border-color: var(--shopee-dark); color: #fff; }
 
-  .section-title {
-    font-size: 16px;
-    font-weight: 700;
-    margin: 24px 0 14px;
-    color: var(--text);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .section-title .count {
-    font-size: 12px;
-    background: var(--shopee-soft);
-    color: var(--shopee);
-    padding: 2px 10px;
-    border-radius: 999px;
-    font-weight: 700;
-  }
+  .section-title { font-size: 16px; font-weight: 700; margin: 24px 0 14px; color: var(--text); display: flex; align-items: center; gap: 8px; }
+  .section-title .count { font-size: 12px; background: var(--shopee-soft); color: var(--shopee); padding: 2px 10px; border-radius: 999px; font-weight: 700; }
 
-  /* Owner avatars colors */
   .av-이보슬 { background: #6366F1; }
   .av-이지수 { background: #14B8A6; }
   .av-마미령 { background: #F59E0B; }
 
-  /* Scrollbar */
+  /* Modal & Setup */
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: none; align-items: center; justify-content: center; z-index: 100; padding: 20px; }
+  .modal-overlay.show { display: flex; }
+  .modal { background: #fff; border-radius: 16px; max-width: 640px; width: 100%; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+  .modal-head { padding: 20px 24px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+  .modal-head h3 { font-size: 18px; font-weight: 700; }
+  .modal-head .close { background: none; border: none; font-size: 24px; cursor: pointer; color: var(--muted); padding: 4px; }
+  .modal-body { padding: 24px; }
+  .modal-body .step { background: #F8FAFC; border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; font-size: 13px; line-height: 1.6; }
+  .modal-body .step b { color: var(--shopee); }
+  .modal-body .step a { color: var(--blue); }
+  .modal-body .step code { background: #fff; padding: 2px 6px; border-radius: 4px; font-family: 'Consolas', 'Monaco', monospace; font-size: 12px; }
+  .modal-body label { display: block; font-size: 12px; color: var(--muted); font-weight: 600; margin: 14px 0 6px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .modal-body textarea { width: 100%; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; font-size: 12px; font-family: 'Consolas', 'Monaco', monospace; min-height: 180px; }
+  .modal-foot { padding: 16px 24px; border-top: 1px solid var(--border); display: flex; gap: 8px; justify-content: flex-end; }
+  .toast-status { font-size: 13px; padding: 10px; border-radius: 8px; margin-top: 12px; display: none; }
+  .toast-status.ok { display: block; background: #DCFCE7; color: #065F46; }
+  .toast-status.err { display: block; background: #FEE2E2; color: #991B1B; }
+  .toast-status.info { display: block; background: #DBEAFE; color: #1E40AF; }
+
+  /* Setup screen (when Firebase not configured) */
+  .setup-screen { padding: 40px; max-width: 720px; margin: 40px auto; background: #fff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+  .setup-screen h2 { font-size: 24px; margin-bottom: 12px; }
+  .setup-screen p { color: var(--muted); margin-bottom: 20px; line-height: 1.6; }
+  .setup-screen .step { background: #F8FAFC; border-radius: 10px; padding: 16px 18px; margin-bottom: 12px; font-size: 14px; line-height: 1.7; }
+  .setup-screen .step b { color: var(--shopee); }
+  .setup-screen code { background: #fff; padding: 2px 6px; border-radius: 4px; font-family: 'Consolas', 'Monaco', monospace; font-size: 13px; }
+
   ::-webkit-scrollbar { width: 8px; height: 8px; }
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
   ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
-
-  /* Empty state */
-  .empty { text-align: center; color: var(--muted); padding: 40px; }
-
-  /* Help text */
-  .help {
-    background: #FFFBEB;
-    border: 1px solid #FDE68A;
-    color: #92400E;
-    padding: 10px 14px;
-    border-radius: 8px;
-    font-size: 12px;
-    margin-bottom: 14px;
-  }
 </style>
 </head>
 <body>
-<div class="app">
+<div class="app" id="app" style="display:none;">
   <aside class="sidebar">
     <div class="sb-brand">
       <h1>
@@ -646,256 +258,365 @@
       </h1>
       <p>리더 · 이보슬 / 통합 진척 대시보드</p>
     </div>
+
+    <div class="sb-identity">
+      <label>내 이름 (편집 권한)</label>
+      <select id="identitySelect">
+        <option value="">-- 보기 전용 --</option>
+        <option value="이보슬">이보슬</option>
+        <option value="이지수">이지수</option>
+        <option value="마미령">마미령</option>
+      </select>
+      <div class="hint" id="identityHint">이름을 선택하면 편집할 수 있습니다.</div>
+    </div>
+
     <nav class="sb-nav" id="sidebarNav"></nav>
+
     <div class="sb-tools">
-      <button onclick="exportData()">내보내기</button>
-      <button onclick="document.getElementById('importFile').click()">가져오기</button>
-      <button class="danger" onclick="resetData()">초기화</button>
-      <input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)">
+      <button class="primary" onclick="openConfig()">⚙️ 설정</button>
+      <button onclick="exportData()">⬇️ JSON 백업</button>
     </div>
   </aside>
 
   <main class="main">
     <div class="topbar">
       <div class="crumb" id="crumb"></div>
-      <div class="save-indicator"><span class="dot"></span> 자동 저장 (브라우저)</div>
+      <div class="topbar-actions">
+        <div class="sync-status synced" id="syncStatus">
+          <span class="dot"></span><span id="syncText">연결 중...</span>
+        </div>
+      </div>
     </div>
     <div class="content" id="content"></div>
   </main>
 </div>
 
-<script>
-// ====== Seed Data ======
-const SEED = {
-  objective: "Shopee 주요 5개국 내 캠페인 매출 및 재구매/팔로워 기반 채널 자산을 함께 성장시킨다",
-  keyResults: [
-    { id: "KR1", title: "Shopee 매출 1Q 대비 약 2.5배 수준인 15억원+ 달성", target: "15억원+" },
-    { id: "KR2", title: "5개국 행사기간 ROAS 500%+ 달성", target: "ROAS 500%+" },
-    { id: "KR3", title: "5개국 평균 재주문율 5-6% → 8-9% (PH 4.09% → 6%+ 핵심)", target: "재주문율 8-9%" },
-    { id: "KR4", title: "샵샵 공식샵 팔로워 팬 20K → 40K로 확대", target: "팔로워 40K" }
-  ],
-  owners: ["이보슬", "이지수", "마미령"],
-  projects: [
-    {
-      id: "P1", kr: "KR1", owner: "이보슬", icon: "📈",
-      name: "Shopee Traffic 유입 강화",
-      description: "키워드 광고·외부 광고(Performance MKT) 믹스 정의",
-      growthPoint: "쇼피 26년 목표 매출 달성",
-      why: "이 프로젝트는 유입을 강화하여 전환까지 만든다",
-      shortName: "매출 관리",
-      milestones: [
-        { id: "M1", title: "국가별 Shopee Ads / CPAS 성과 분석 및 현황 진단", period: "", output: "광고 성과 분석 리포트", status: "진행중", deliverables: "", links: "", notes: "" },
-        { id: "M2", title: "국가별 목표 설정 및 예산 분배", period: "", output: "광고 성과 분석 리포트", status: "대기", deliverables: "", links: "", notes: "" },
-        { id: "M3", title: "Mega Campaign 기반 광고 운영 최적화 (6.6 / 7.7 대응)", period: "", output: "캠페인 운영 리포트", status: "대기", deliverables: "", links: "", notes: "" },
-        { id: "M4", title: "국가별 광고 효율 리뷰 및 ROAS 운영 프로토콜 정리", period: "", output: "최종 광고 운영 가이드", status: "대기", deliverables: "", links: "", notes: "" }
-      ]
-    },
-    {
-      id: "P2", kr: "KR1", owner: "이지수", icon: "⚡",
-      name: "전환율 개선",
-      description: "PDP·체크아웃 UX 개선 + 번들·할인 구조 최적화",
-      growthPoint: "전환율을 상승시켜 불필요한 광고비를 줄이고 매출 달성에 기여한다",
-      why: "전환율 제고로 매출 효율을 극대화한다",
-      shortName: "전환율 제고",
-      milestones: [
-        { id: "M1", title: "Shopee 전환율 현황 데이터 수집 & PDP·체크아웃 단계별 이탈 구간 분석", period: "5/18 → 5/27", output: "Raw 데이터(시트) + 분석 데이터(시트)", status: "대기", deliverables: "", links: "", notes: "" },
-        { id: "M2", title: "경쟁사 PDP/프로모션 벤치마킹 & 상품 상세페이지 구성 개선안 작성", period: "5/27 → 6/10", output: "PDP 기획안(피그마)", status: "대기", deliverables: "", links: "", notes: "" },
-        { id: "M3", title: "PDP 개선안 적용 및 상품페이지 업데이트 & 적용 후 전환율 성과 측정·개선 효과 분석", period: "6/24 → 6/30", output: "쇼피 판매 링크 + 분석 데이터(시트)", status: "대기", deliverables: "", links: "", notes: "" }
-      ]
-    },
-    {
-      id: "P3", kr: "KR2", owner: "이보슬", icon: "🌏",
-      name: "Global Winning 소재 운영",
-      description: "Global Winning 소재 공유 및 동남아 지역 적용 Protocol 수립",
-      growthPoint: "광고비 효율화로 인한 영업이익 안정화",
-      why: "효율을 기반으로 행사 시 목표를 달성한다",
-      shortName: "효율 관리",
-      milestones: [
-        { id: "M1", title: "국가별 경쟁사 광고 소재 및 배너 레퍼런스 수집", period: "", output: "소재 벤치마킹 시트", status: "대기", deliverables: "", links: "", notes: "" },
-        { id: "M2", title: "국가별 트렌드 기반 Winning 소재 유형 분석 및 정리", period: "", output: "Winning 소재 아카이빙", status: "대기", deliverables: "", links: "", notes: "" },
-        { id: "M3", title: "국가별 소재 A/B 테스트 및 CTR/CVR 성과 검증", period: "", output: "테스트 결과 리포트", status: "대기", deliverables: "", links: "", notes: "" },
-        { id: "M4", title: "동남아 공통 활용 가능한 소재 운영 Protocol 및 가이드 구축", period: "", output: "최종 광고 운영 가이드", status: "대기", deliverables: "", links: "", notes: "" }
-      ]
-    },
-    {
-      id: "P4", kr: "KR3", owner: "이지수", icon: "🔁",
-      name: "재구매율 제고 방안 수립",
-      description: "재구매 전환 상품 기획(번들·GWP) / 자동화 리텐션 메시지 플로우 구축(EDM 탬플릿, A/B 테스트)",
-      growthPoint: "국가별 평균 재주문율을 끌어 올려 안정적인 매출과 충성 고객을 만든다",
-      why: "재구매율 제고로 고객 LTV를 높인다",
-      shortName: "재구매율 제고",
-      milestones: [
-        { id: "M1", title: "5개국 재주문율·캠페인 매출 현황 데이터 수집 & 분석", period: "5/18 → 5/22", output: "Raw 데이터 + 분석 데이터(시트)", status: "완료", deliverables: "", links: "", notes: "" },
-        { id: "M2", title: "재구매 전환 상품 기획 및 메시지 플로우 설계", period: "5/25 → 5/29", output: "분석 데이터 + 운영 기획안(시트)", status: "완료", deliverables: "", links: "", notes: "" },
-        { id: "M3", title: "재구매 유도 번들·GWP 구성안 기획 및 세팅", period: "5/26 → 6/15", output: "운영 기획안 + 쇼피 판매 링크", status: "완료", deliverables: "", links: "", notes: "" },
-        { id: "M4", title: "EDM 탬플릿 제작·A/B 테스트안 수립 & 재주문율·매출 성과 분석", period: "6/1 → 6/19", output: "운영 기획안 + 분석 데이터(시트)", status: "지연", deliverables: "", links: "", notes: "" }
-      ]
-    },
-    {
-      id: "P5", kr: "KR3", owner: "이지수", icon: "🔍",
-      name: "재구매 패턴 분석",
-      description: "국가별 재구매 세그먼트 & 타이밍 분석 (1회/2회+/휴면 → D+30/D+60 최적화)",
-      growthPoint: "세그먼트별 최적 타이밍 발굴로 리텐션 효율 극대화",
-      why: "데이터 기반 세그먼트 분류로 리텐션 액션의 정확도를 높인다",
-      shortName: "재구매 패턴 분석",
-      milestones: [
-        { id: "M1", title: "5개국 고객 구매 이력 Raw 데이터 추출 & 고객 세그먼트 분류", period: "5/18 → 5/22", output: "Raw 데이터 + 분석 데이터(시트)", status: "완료", deliverables: "", links: "", notes: "" },
-        { id: "M2", title: "구매 횟수·재구매 기간 기준 고객 세그먼트 분류 & D+30/D+60 재구매 패턴 분석", period: "5/25 → 5/29", output: "분석 데이터(시트)", status: "완료", deliverables: "", links: "", notes: "" },
-        { id: "M3", title: "세그먼트별 리텐션 메시지 발송 타이밍 기준 수립 (P1 연계)", period: "6/1 → 6/1", output: "P1 Task 5 산출물 동일", status: "완료", deliverables: "", links: "", notes: "" }
-      ]
-    },
-    {
-      id: "P6", kr: "KR4", owner: "마미령", icon: "🎁",
-      name: "고객 혜택 설계",
-      description: "팔로워 즉시 혜택 설계(웰컴 쿠폰·포인트·전용 할인코드) + 국가별 멤버십 설정 및 샵 팔로워 혜택 강화",
-      growthPoint: "혜택 강화로 팔로우 전환율 상승",
-      why: "팔로워의 즉시 혜택 체감으로 채널 자산 성장 가속",
-      shortName: "고객 혜택 설계",
-      milestones: [
-        { id: "M1", title: "5개국 CS AI 응대 가이드 & Shop Follow 고객 비정기 쿠폰·혜택 안내 운영", period: "5/18 → 5/22", output: "CS AI 응대 가이드", status: "완료", deliverables: "", links: "", notes: "" },
-        { id: "M2", title: "Shop Follow 행사 기획 & 배너 제작·세팅 & Shop Membership Tier 기획안", period: "5/25 → 5/29", output: "Google Form + 5개국 배너 + Membership card 기획안", status: "진행중", deliverables: "", links: "", notes: "" },
-        { id: "M3", title: "Chat Broadcast Shop Follow Voucher 발송 & TW/VN Shop Membership 세팅·혜택 구성", period: "6/1 → 6/12", output: "Chat Broadcast + Brand membership(TW/VN)", status: "진행중", deliverables: "", links: "", notes: "" },
-        { id: "M4", title: "SG/MY/PH Shop Membership 세팅 및 혜택 구성", period: "6/15 → 6/19", output: "Brand membership(SG/MY/PH)", status: "진행중", deliverables: "", links: "", notes: "" },
-        { id: "M5", title: "Instagram 등 SNS 채널 연계 Shop Follow 인증 캡처 기반 추첨형 Giveaway 이벤트 검토", period: "6/22 → 6/26", output: "SNS 콘텐츠", status: "대기", deliverables: "", links: "", notes: "" },
-        { id: "M6", title: "SNS 팔로워 이벤트 관련 게시물 기획안 작성", period: "6/22 → 6/26", output: "피그마", status: "대기", deliverables: "", links: "", notes: "" }
-      ]
-    },
-    {
-      id: "P7", kr: "KR4", owner: "마미령", icon: "📡",
-      name: "라이브 관리",
-      description: "라이브/Affiliate 팔로우 전환 인센티브 및 라이브 CTA 강화 — Affiliate 가이드 배포 + 라이브 시 팔로우 유도 이벤트 진행",
-      growthPoint: "라이브·Affiliate 콘텐츠를 통한 팔로우 전환율 상승",
-      why: "콘텐츠 채널 CTA 강화로 팔로우 자산 확대",
-      shortName: "라이브 관리",
-      milestones: [
-        { id: "M1", title: "5개국 SNS 콘텐츠 레퍼런스 확인 & KOL 리스트업 + SNS 콘텐츠 가이드 내 Shop Follow 유도 문구·CTA 반영", period: "5/12 → 5/22", output: "AMS 진행 현황 시트 + PDF/PNG", status: "진행중", deliverables: "", links: "", notes: "" },
-        { id: "M2", title: "5개국 Affiliate 콘텐츠용 Shop Follow 유도 문구/링크 가이드 정리", period: "5/18 → 5/22", output: "PDF or PNG", status: "진행중", deliverables: "", links: "", notes: "" },
-        { id: "M3", title: "5개국 라이브 진행 시 Shop Follow 유도 Giveaway 이벤트 & Tier별 이벤트 혜택·증정 구성 세분화", period: "5/25 → 6/5", output: "데이터 시트(×2)", status: "진행중", deliverables: "", links: "", notes: "" }
-      ]
-    },
-    {
-      id: "P8", kr: "KR4", owner: "마미령", icon: "📊",
-      name: "팔로워 모니터링",
-      description: "국가별 주간 팔로워 증감 모니터링 - 주요 캠페인(페이데이, 더블데이) 전후 팔로워 유입 효과 측정",
-      growthPoint: "주간 모니터링으로 채널 자산 변동성 관리",
-      why: "데이터 기반 의사결정으로 40K 달성 경로 확보",
-      shortName: "팔로워 모니터링",
-      milestones: [
-        { id: "M1", title: "5개국 채널별 Shop Follow 증감 현황 트래킹 시트", period: "5/18 → 5/20", output: "데이터 시트", status: "완료", deliverables: "", links: "", notes: "" },
-        { id: "M2", title: "5개국 Mini Spike Day 캠페인 전후 성과 및 기입용 트래킹 시트", period: "6/1 → 6/2", output: "데이터 시트", status: "완료", deliverables: "", links: "", notes: "" },
-        { id: "M3", title: "5개국 Double Day 캠페인 전후 성과 및 기입용 트래킹 시트", period: "6/2 → 6/2", output: "데이터 시트", status: "완료", deliverables: "", links: "", notes: "" },
-        { id: "M4", title: "5개국 라이브 진행 전후 성과 및 기입용 트래킹 시트", period: "6/8 → 6/10", output: "데이터 시트", status: "완료", deliverables: "", links: "", notes: "" }
-      ]
-    }
-  ]
-};
+<!-- Setup screen (no Firebase config) -->
+<div id="setupScreen" class="setup-screen" style="display:none;">
+  <h2>🔥 Firebase 연결이 필요합니다</h2>
+  <p>이 대시보드는 팀이 함께 실시간 편집할 수 있도록 Firebase Realtime Database를 사용합니다.<br>
+  리더가 1회 설정하면 모든 팀원은 별도 작업 없이 바로 사용할 수 있습니다.</p>
 
-const STORAGE_KEY = "shopeeOKR-data-v1";
+  <div class="step">
+    <b>방법 1 (권장):</b> 리더가 <code>firebase-config.js</code> 파일에 Firebase 설정을 입력하고 GitHub repo에 업로드 → 모든 팀원에게 자동 적용됨.<br>
+    <span style="color:var(--muted)">→ <code>README_사용법.md</code> PART 1 참고</span>
+  </div>
+
+  <div class="step">
+    <b>방법 2 (임시):</b> 아래 ⚙️ 설정 버튼을 눌러 본인 브라우저에만 임시 적용 (다른 PC에서는 다시 입력 필요).
+  </div>
+
+  <div style="text-align:center; margin-top:24px;">
+    <button class="btn primary" onclick="openConfig()" style="padding:12px 32px; font-size:14px;">⚙️ Firebase 설정 입력</button>
+  </div>
+</div>
+
+<!-- Config Modal -->
+<div class="modal-overlay" id="configModal">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>🔥 Firebase 설정</h3>
+      <button class="close" onclick="closeConfig()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="step">
+        <b>1.</b> <a href="https://console.firebase.google.com/" target="_blank">Firebase 콘솔</a>에서 프로젝트 생성<br>
+        <b>2.</b> 좌측 메뉴 <b>Build → Realtime Database</b> → <b>Create Database</b> (Singapore 권장, Start in <b>test mode</b>)<br>
+        <b>3.</b> 좌측 톱니바퀴 <b>Project settings</b> → 하단 <b>Your apps</b> → <b>Web</b> (&lt;/&gt; 아이콘) → 앱 등록 → 표시된 <code>firebaseConfig</code> 객체를 복사<br>
+        <b>4.</b> 아래에 붙여넣고 <b>저장</b>
+      </div>
+
+      <label>firebaseConfig 객체 (Firebase 콘솔에서 복사한 그대로)</label>
+      <textarea id="firebaseConfigInput" placeholder='{
+  "apiKey": "AIza...",
+  "authDomain": "shopee-okr.firebaseapp.com",
+  "databaseURL": "https://shopee-okr-default-rtdb.asia-southeast1.firebasedatabase.app",
+  "projectId": "shopee-okr",
+  ...
+}'></textarea>
+
+      <div class="toast-status" id="configToast"></div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn" onclick="clearConfig()" style="color:var(--red); border-color:#FCA5A5;">설정 삭제</button>
+      <button class="btn primary" onclick="saveConfig()">저장 + 연결</button>
+    </div>
+  </div>
+</div>
+
+<!-- Firebase SDK (compat for simple usage) -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+<!-- Optional config file (leader edits & commits to repo) -->
+<script src="firebase-config.js" onerror="window.__noFirebaseConfigFile=true"></script>
+
+<script>
+// ====================================================================
+// Config Loading
+// ====================================================================
+const STORAGE_KEYS = {
+  identity: "shopeeOKR-identity",
+  fbConfig: "shopeeOKR-fbConfig"  // local override
+};
 const STATUSES = ["대기", "진행중", "완료", "지연"];
 const STATUS_WEIGHT = { "완료": 1.0, "진행중": 0.5, "지연": 0.3, "대기": 0.0 };
+const FB_PATH = "shopeeOKR";
 
-let state = loadData();
+let state = null;
 let currentView = { type: "home", projectId: null };
+let identity = localStorage.getItem(STORAGE_KEYS.identity) || "";
+let db = null;
+let dataRef = null;
+let saveDebounce = {};
 
-function loadData() {
+function getFirebaseConfig() {
+  // 1. Try window.FIREBASE_CONFIG (from firebase-config.js)
+  if (window.FIREBASE_CONFIG && window.FIREBASE_CONFIG.apiKey) return window.FIREBASE_CONFIG;
+  // 2. Try localStorage override
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) return JSON.parse(raw);
-  } catch(e) { console.warn(e); }
-  return JSON.parse(JSON.stringify(SEED));
-}
-function saveData() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-}
-function resetData() {
-  if (!confirm("모든 입력을 초기 상태로 되돌립니다. 계속할까요?")) return;
-  state = JSON.parse(JSON.stringify(SEED));
-  saveData();
-  render();
-}
-function exportData() {
-  const blob = new Blob([JSON.stringify(state, null, 2)], {type: "application/json"});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  const ts = new Date().toISOString().slice(0,10);
-  a.href = url;
-  a.download = `Shopee_OKR_${ts}.json`;
-  document.body.appendChild(a); a.click(); a.remove();
-  URL.revokeObjectURL(url);
-}
-function importData(ev) {
-  const file = ev.target.files[0];
-  if (!file) return;
-  const r = new FileReader();
-  r.onload = e => {
-    try {
-      const data = JSON.parse(e.target.result);
-      if (!data.projects || !Array.isArray(data.projects)) throw new Error("형식 오류");
-      state = data;
-      saveData();
-      render();
-      alert("불러왔습니다.");
-    } catch(err) {
-      alert("파일을 읽을 수 없습니다: " + err.message);
-    }
-  };
-  r.readAsText(file);
-  ev.target.value = "";
+    const ls = localStorage.getItem(STORAGE_KEYS.fbConfig);
+    if (ls) return JSON.parse(ls);
+  } catch (e) {}
+  return null;
 }
 
-// ====== Math helpers ======
-function projectProgress(p) {
-  if (!p.milestones.length) return 0;
-  const sum = p.milestones.reduce((a, m) => a + (STATUS_WEIGHT[m.status] ?? 0), 0);
-  return Math.round((sum / p.milestones.length) * 100);
-}
-function krProgress(krId) {
-  const ps = state.projects.filter(p => p.kr === krId);
-  if (!ps.length) return 0;
-  return Math.round(ps.reduce((a, p) => a + projectProgress(p), 0) / ps.length);
-}
-function ownerProgress(o) {
-  const ps = state.projects.filter(p => p.owner === o);
-  if (!ps.length) return 0;
-  return Math.round(ps.reduce((a, p) => a + projectProgress(p), 0) / ps.length);
-}
-function ownerTaskCounts(o) {
-  const counts = { 완료: 0, 진행중: 0, 지연: 0, 대기: 0, total: 0 };
-  state.projects.filter(p => p.owner === o).forEach(p => {
-    p.milestones.forEach(m => { counts[m.status]++; counts.total++; });
-  });
-  return counts;
-}
-function totalProgress() {
-  if (!state.projects.length) return 0;
-  return Math.round(state.projects.reduce((a, p) => a + projectProgress(p), 0) / state.projects.length);
-}
-
+// ====================================================================
+// Helpers
+// ====================================================================
 function escapeHtml(s) {
   return String(s ?? "").replace(/[&<>"']/g, c => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;"
   }[c]));
 }
+function projectProgress(p) {
+  const ms = p.milestones || [];
+  if (!ms.length) return 0;
+  const sum = ms.reduce((a, m) => a + (STATUS_WEIGHT[m.status] ?? 0), 0);
+  return Math.round((sum / ms.length) * 100);
+}
+function krProgress(krId) {
+  const ps = (state.projects || []).filter(p => p.kr === krId);
+  if (!ps.length) return 0;
+  return Math.round(ps.reduce((a, p) => a + projectProgress(p), 0) / ps.length);
+}
+function ownerProgress(o) {
+  const ps = (state.projects || []).filter(p => p.owner === o);
+  if (!ps.length) return 0;
+  return Math.round(ps.reduce((a, p) => a + projectProgress(p), 0) / ps.length);
+}
+function ownerTaskCounts(o) {
+  const counts = { 완료: 0, 진행중: 0, 지연: 0, 대기: 0, total: 0 };
+  (state.projects || []).filter(p => p.owner === o).forEach(p => {
+    (p.milestones || []).forEach(m => { counts[m.status]++; counts.total++; });
+  });
+  return counts;
+}
+function totalProgress() {
+  const ps = state.projects || [];
+  if (!ps.length) return 0;
+  return Math.round(ps.reduce((a, p) => a + projectProgress(p), 0) / ps.length);
+}
+function isLeader(name) {
+  return !!(name && (state.leaders || []).includes(name));
+}
+function canEdit(p) {
+  if (!identity) return false;
+  if (isLeader(identity)) return true;
+  return p.owner === identity;
+}
+function setSyncStatus(kind, text) {
+  const el = document.getElementById("syncStatus");
+  el.className = "sync-status " + kind;
+  document.getElementById("syncText").textContent = text;
+}
+function formatTime(iso) {
+  if (!iso) return "수정 이력 없음";
+  try {
+    const d = new Date(iso);
+    return d.toLocaleString("ko-KR", { month:"2-digit", day:"2-digit", hour:"2-digit", minute:"2-digit"});
+  } catch { return iso; }
+}
 
-// ====== Sidebar ======
+// ====================================================================
+// Firebase init & sync
+// ====================================================================
+async function initFirebase() {
+  const config = getFirebaseConfig();
+  if (!config) {
+    document.getElementById("setupScreen").style.display = "block";
+    document.getElementById("app").style.display = "none";
+    return false;
+  }
+
+  try {
+    if (!firebase.apps.length) firebase.initializeApp(config);
+    db = firebase.database();
+    dataRef = db.ref(FB_PATH);
+  } catch (e) {
+    document.getElementById("setupScreen").style.display = "block";
+    document.getElementById("app").style.display = "none";
+    alert("Firebase 초기화 실패: " + e.message);
+    return false;
+  }
+
+  document.getElementById("setupScreen").style.display = "none";
+  document.getElementById("app").style.display = "flex";
+  setSyncStatus("saving", "연결 중...");
+
+  // Connection status
+  db.ref(".info/connected").on("value", snap => {
+    if (snap.val() === true) {
+      setSyncStatus("synced", "실시간 동기화");
+    } else {
+      setSyncStatus("error", "오프라인");
+    }
+  });
+
+  // Subscribe to data
+  dataRef.on("value", async snap => {
+    const remote = snap.val();
+    if (!remote || !remote.projects) {
+      // First time — seed from data.json
+      console.log("Firebase가 비어있음. data.json에서 시드 데이터 로드...");
+      try {
+        const r = await fetch("data.json", { cache: "no-store" });
+        if (!r.ok) throw new Error("data.json fetch failed");
+        const seed = await r.json();
+        seed.lastModified = new Date().toISOString();
+        seed.lastEditor = "초기화";
+        await dataRef.set(seed);
+        // onValue will fire again with the seeded data
+      } catch (e) {
+        console.error("Seed failed:", e);
+        setSyncStatus("error", "초기 데이터 로드 실패");
+        alert("data.json을 불러올 수 없습니다.\n같은 폴더에 data.json이 있는지 확인해주세요.\n\n오류: " + e.message);
+      }
+      return;
+    }
+    applyRemoteData(remote);
+  }, err => {
+    console.error("Firebase read error:", err);
+    setSyncStatus("error", "읽기 권한 오류");
+    alert("Firebase 읽기 실패: " + err.message + "\n\nRealtime Database 규칙(.read)을 확인해주세요.");
+  });
+
+  return true;
+}
+
+function applyRemoteData(remote) {
+  // Preserve currently focused field's value & cursor if user is mid-typing
+  const active = document.activeElement;
+  let preserve = null;
+  if (active && (active.tagName === "TEXTAREA" || active.tagName === "INPUT") && active.dataset.fieldRef) {
+    preserve = {
+      ref: active.dataset.fieldRef,
+      value: active.value,
+      selStart: active.selectionStart,
+      selEnd: active.selectionEnd
+    };
+  }
+
+  state = remote;
+  // Ensure arrays where Firebase may have returned objects
+  state.projects = normalizeArray(state.projects);
+  state.projects.forEach(p => {
+    p.milestones = normalizeArray(p.milestones);
+  });
+  state.keyResults = normalizeArray(state.keyResults);
+  state.owners = normalizeArray(state.owners);
+  state.leaders = normalizeArray(state.leaders);
+
+  render();
+
+  // Restore focused field
+  if (preserve) {
+    const el = document.querySelector(`[data-field-ref="${preserve.ref}"]`);
+    if (el) {
+      el.value = preserve.value;
+      try { el.setSelectionRange(preserve.selStart, preserve.selEnd); } catch (e) {}
+      el.focus();
+    }
+  }
+}
+
+function normalizeArray(v) {
+  if (Array.isArray(v)) return v.filter(x => x != null);
+  if (v && typeof v === "object") return Object.keys(v).sort((a,b) => Number(a)-Number(b)).map(k => v[k]).filter(x => x != null);
+  return [];
+}
+
+// ====================================================================
+// Write operations
+// ====================================================================
+function pushUpdate(updates) {
+  if (!dataRef) return;
+  updates["lastModified"] = new Date().toISOString();
+  updates["lastEditor"] = identity || "익명";
+  setSyncStatus("saving", "저장 중...");
+  dataRef.update(updates)
+    .then(() => setSyncStatus("synced", "실시간 동기화"))
+    .catch(e => {
+      console.error(e);
+      setSyncStatus("error", "저장 실패");
+      alert("저장 실패: " + e.message + "\n\nDatabase 규칙(.write)을 확인해주세요.");
+    });
+}
+
+function writeMilestonesArray(pIdx) {
+  // Used for add/delete/reorder — rewrite whole milestones array
+  const updates = {};
+  updates[`projects/${pIdx}/milestones`] = state.projects[pIdx].milestones;
+  pushUpdate(updates);
+}
+
+// ====================================================================
+// Identity
+// ====================================================================
+function onIdentityChange(v) {
+  identity = v;
+  localStorage.setItem(STORAGE_KEYS.identity, identity);
+  updateIdentityHint();
+  render();
+}
+function updateIdentityHint() {
+  const hint = document.getElementById("identityHint");
+  if (identity) {
+    if (isLeader(identity)) {
+      hint.innerHTML = `👑 <b>${escapeHtml(identity)}</b> · 리더 · 전체 프로젝트 편집 가능`;
+    } else {
+      const projCount = (state?.projects || []).filter(p => p.owner === identity).length;
+      hint.innerHTML = `편집 가능: <b>${escapeHtml(identity)}</b> · 본인 ${projCount}개 프로젝트`;
+    }
+  } else {
+    hint.textContent = "이름을 선택하면 편집할 수 있습니다.";
+  }
+}
+
+// ====================================================================
+// Sidebar
+// ====================================================================
 function renderSidebar() {
+  document.getElementById("identitySelect").value = identity;
+  updateIdentityHint();
+
   const nav = document.getElementById("sidebarNav");
   let html = `<div class="sb-home ${currentView.type==='home'?'active':''}" onclick="goHome()">
     <span>🏠</span><span>홈 대시보드</span>
   </div>`;
 
-  state.owners.forEach(owner => {
-    const projects = state.projects.filter(p => p.owner === owner);
-    const initial = owner.slice(-2,-1) || owner[0]; // 가운데 글자
+  (state.owners || []).forEach(owner => {
+    const projects = (state.projects || []).filter(p => p.owner === owner);
+    const isMe = identity && owner === identity;
     html += `<div class="sb-owner">
       <div class="sb-owner-head">
         <span class="avatar av-${owner}">${escapeHtml(owner[0])}</span>
-        <span>${escapeHtml(owner)} <span style="color:#64748B;font-weight:500;">(${projects.length})</span></span>
+        <span>${escapeHtml(owner)} <span style="color:#64748B;font-weight:500;">(${projects.length})</span>${isMe?'<span class="me-tag">나</span>':''}</span>
       </div>`;
     projects.forEach(p => {
       const isActive = currentView.type==='project' && currentView.projectId===p.id;
+      const editable = canEdit(p);
       const pct = projectProgress(p);
-      html += `<div class="sb-project ${isActive?'active':''}" onclick="goProject('${p.id}')">
+      html += `<div class="sb-project ${isActive?'active':''} ${editable?'editable':''}" onclick="goProject('${p.id}')">
         <span class="ic">${p.icon}</span>
         <span class="nm">${escapeHtml(p.shortName || p.name)}</span>
         <span class="pct">${pct}%</span>
@@ -907,7 +628,9 @@ function renderSidebar() {
   nav.innerHTML = html;
 }
 
-// ====== Home view ======
+// ====================================================================
+// Home view
+// ====================================================================
 function renderHome() {
   document.getElementById("crumb").innerHTML = `<b>홈 대시보드</b> · OKR 통합 현황`;
 
@@ -917,19 +640,19 @@ function renderHome() {
     <h2>${escapeHtml(state.objective)}</h2>
     <div class="obj-meta">
       <div><b>${totalProgress()}%</b><span>전체 진척</span></div>
-      <div><b>${state.projects.length}</b><span>프로젝트</span></div>
-      <div><b>${state.projects.reduce((a,p)=>a+p.milestones.length,0)}</b><span>마일스톤</span></div>
-      <div><b>${state.owners.length}</b><span>담당자</span></div>
+      <div><b>${(state.projects||[]).length}</b><span>프로젝트</span></div>
+      <div><b>${(state.projects||[]).reduce((a,p)=>a+(p.milestones||[]).length,0)}</b><span>마일스톤</span></div>
+      <div><b>${(state.owners || []).length}</b><span>담당자</span></div>
+      ${state.lastModified ? `<div><b>${formatTime(state.lastModified)}</b><span>마지막 수정 · ${escapeHtml(state.lastEditor||'')}</span></div>` : ''}
     </div>
   </div>
 
-  <div class="section-title">Key Results <span class="count">${state.keyResults.length}</span></div>
+  <div class="section-title">Key Results <span class="count">${(state.keyResults||[]).length}</span></div>
   <div class="row kr">`;
 
-  state.keyResults.forEach(kr => {
+  (state.keyResults || []).forEach(kr => {
     const pct = krProgress(kr.id);
-    const projs = state.projects.filter(p => p.kr === kr.id);
-    const projCount = projs.length;
+    const projs = (state.projects || []).filter(p => p.kr === kr.id);
     html += `
     <div class="card kr-card">
       <h3><span class="tag">${kr.id}</span></h3>
@@ -938,24 +661,23 @@ function renderHome() {
       <div class="progress"><div class="bar" style="width:${pct}%"></div></div>
       <div class="kr-stats">
         <span><b>${pct}%</b> 진척</span>
-        <span><b>${projCount}</b>개 프로젝트</span>
+        <span><b>${projs.length}</b>개 프로젝트</span>
       </div>
     </div>`;
   });
   html += `</div>`;
 
-  // Owner cards
-  html += `<div class="section-title">담당자별 현황 <span class="count">${state.owners.length}</span></div>
+  html += `<div class="section-title">담당자별 현황 <span class="count">${(state.owners||[]).length}</span></div>
   <div class="row owners">`;
-  state.owners.forEach(o => {
+  (state.owners || []).forEach(o => {
     const pct = ownerProgress(o);
-    const projCount = state.projects.filter(p => p.owner === o).length;
+    const projCount = (state.projects || []).filter(p => p.owner === o).length;
     const tc = ownerTaskCounts(o);
     html += `
     <div class="card owner-card">
       ${donutSvg(pct)}
       <div class="owner-info">
-        <div class="name"><span class="av av-${o}">${escapeHtml(o[0])}</span> ${escapeHtml(o)}</div>
+        <div class="name"><span class="av av-${o}">${escapeHtml(o[0])}</span> ${escapeHtml(o)} ${identity===o?'<span class="pill blue">나</span>':''}</div>
         <div class="meta"><b>${projCount}</b>개 프로젝트 · <b>${tc.total}</b>개 마일스톤</div>
         <div class="task-stats">
           ${tc.완료?`<span class="pill green">완료 ${tc.완료}</span>`:''}
@@ -968,8 +690,7 @@ function renderHome() {
   });
   html += `</div>`;
 
-  // Project table
-  html += `<div class="section-title">프로젝트 진행률 <span class="count">${state.projects.length}</span></div>
+  html += `<div class="section-title">프로젝트 진행률 <span class="count">${(state.projects||[]).length}</span></div>
   <div class="card" style="padding:0;overflow:hidden;">
     <table class="proj-table">
       <thead>
@@ -983,16 +704,16 @@ function renderHome() {
         </tr>
       </thead>
       <tbody>`;
-  state.projects.forEach(p => {
+  (state.projects || []).forEach(p => {
     const pct = projectProgress(p);
     const counts = { 완료:0, 진행중:0, 지연:0, 대기:0 };
-    p.milestones.forEach(m => counts[m.status]++);
+    (p.milestones || []).forEach(m => counts[m.status]++);
     html += `
     <tr class="clickable" onclick="goProject('${p.id}')">
       <td class="nm"><span class="ic">${p.icon}</span>${escapeHtml(p.name)}</td>
       <td><span class="pill blue">${p.kr}</span></td>
-      <td><span class="av-${p.owner}" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:currentColor;margin-right:6px;"></span>${escapeHtml(p.owner)}</td>
-      <td>${p.milestones.length}개</td>
+      <td>${escapeHtml(p.owner)}${identity===p.owner?' <span class="pill blue">나</span>':''}</td>
+      <td>${(p.milestones||[]).length}개</td>
       <td>
         <div class="pcell">
           <div class="progress thin"><div class="bar" style="width:${pct}%"></div></div>
@@ -1015,13 +736,14 @@ function renderHome() {
 function donutSvg(pct) {
   const r = 32, c = 2 * Math.PI * r;
   const off = c - (pct/100) * c;
+  const uid = "g" + pct + "_" + Math.random().toString(36).slice(2,7);
   return `<div class="donut-wrap">
     <svg width="80" height="80">
       <circle cx="40" cy="40" r="${r}" fill="none" stroke="#F1F5F9" stroke-width="8"/>
-      <circle cx="40" cy="40" r="${r}" fill="none" stroke="url(#g${pct})" stroke-width="8"
+      <circle cx="40" cy="40" r="${r}" fill="none" stroke="url(#${uid})" stroke-width="8"
         stroke-dasharray="${c}" stroke-dashoffset="${off}" stroke-linecap="round"/>
       <defs>
-        <linearGradient id="g${pct}" x1="0%" y1="0%" x2="100%" y2="100%">
+        <linearGradient id="${uid}" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stop-color="#EE4D2D"/>
           <stop offset="100%" stop-color="#F97316"/>
         </linearGradient>
@@ -1031,17 +753,33 @@ function donutSvg(pct) {
   </div>`;
 }
 
-// ====== Project view ======
+// ====================================================================
+// Project view
+// ====================================================================
 function renderProject() {
-  const p = state.projects.find(x => x.id === currentView.projectId);
+  const p = (state.projects || []).find(x => x.id === currentView.projectId);
   if (!p) { goHome(); return; }
-  const kr = state.keyResults.find(k => k.id === p.kr);
+  const kr = (state.keyResults || []).find(k => k.id === p.kr);
   const pct = projectProgress(p);
+  const editable = canEdit(p);
+  const pIdx = state.projects.indexOf(p);
 
   document.getElementById("crumb").innerHTML =
-    `${escapeHtml(p.owner)} · <b>${escapeHtml(p.name)}</b>`;
+    `${escapeHtml(p.owner)} · <b>${escapeHtml(p.name)}</b>${editable?' <span class="pill green" style="margin-left:6px;">편집 가능</span>':' <span class="pill gray" style="margin-left:6px;">보기 전용</span>'}`;
 
-  let html = `
+  let html = '';
+
+  if (!editable) {
+    if (identity) {
+      html += `<div class="read-only-banner">🔒 <b>${escapeHtml(p.owner)}</b>님의 프로젝트입니다. 보기 전용으로 표시됩니다. (본인 프로젝트만 편집 가능, 리더는 전체 편집)</div>`;
+    } else {
+      html += `<div class="read-only-banner">👀 보기 전용 모드입니다. 편집하려면 좌측 상단에서 <b>본인 이름</b>을 선택하세요.</div>`;
+    }
+  } else if (isLeader(identity) && p.owner !== identity) {
+    html += `<div class="read-only-banner" style="background:#FEF3C7;border-color:#FCD34D;color:#92400E;">👑 리더 권한으로 <b>${escapeHtml(p.owner)}</b>님의 프로젝트를 편집 중입니다. 변경사항은 모든 팀원에게 실시간 공유됩니다.</div>`;
+  }
+
+  html += `
   <div class="proj-header">
     <div class="ph-top">
       <div style="flex:1;">
@@ -1050,8 +788,8 @@ function renderProject() {
         <div class="ph-meta">
           <div class="item">담당자<b>${escapeHtml(p.owner)}</b></div>
           <div class="item">Key Result<b>${escapeHtml(kr ? kr.id + ' · ' + kr.target : '-')}</b></div>
-          <div class="item">마일스톤<b>${p.milestones.length}개</b></div>
-          <div class="item">완료<b>${p.milestones.filter(m=>m.status==='완료').length} / ${p.milestones.length}</b></div>
+          <div class="item">마일스톤<b>${(p.milestones||[]).length}개</b></div>
+          <div class="item">완료<b>${(p.milestones||[]).filter(m=>m.status==='완료').length} / ${(p.milestones||[]).length}</b></div>
         </div>
       </div>
       <div class="progress-block">
@@ -1070,25 +808,27 @@ function renderProject() {
     </div>
   </div>
 
-  <div class="section-title">마일스톤 <span class="count">${p.milestones.length}</span>
+  <div class="section-title">마일스톤 <span class="count">${(p.milestones||[]).length}</span>
     <div style="margin-left:auto; display:flex; gap:6px;">
       <button class="btn" onclick="expandAll(true)">모두 펼치기</button>
       <button class="btn" onclick="expandAll(false)">모두 접기</button>
-      <button class="btn primary" onclick="addMilestone('${p.id}')">+ 마일스톤 추가</button>
+      ${editable?`<button class="btn primary" onclick="addMilestone('${p.id}')">+ 마일스톤 추가</button>`:''}
     </div>
   </div>
 
   <div class="ms-list" id="msList">`;
 
-  p.milestones.forEach((m, idx) => {
-    html += renderMilestoneCard(p.id, m, idx);
+  (p.milestones || []).forEach((m, mIdx) => {
+    html += renderMilestoneCard(p.id, pIdx, m, mIdx, editable);
   });
 
   html += `</div>`;
   document.getElementById("content").innerHTML = html;
 }
 
-function renderMilestoneCard(pid, m, idx) {
+function renderMilestoneCard(pid, pIdx, m, mIdx, editable) {
+  const dis = editable ? "" : "disabled";
+  const refBase = `${pid}/${m.id}`;
   return `
   <div class="ms-card" data-mid="${m.id}">
     <div class="ms-head" onclick="toggleMs(this)">
@@ -1102,17 +842,17 @@ function renderMilestoneCard(pid, m, idx) {
       <div class="ms-meta">
         <div class="field">
           <label>마일스톤 제목</label>
-          <input type="text" value="${escapeHtml(m.title)}"
-            onchange="updateMs('${pid}','${m.id}','title',this.value)">
+          <input type="text" data-field-ref="${refBase}/title" value="${escapeHtml(m.title)}" ${dis}
+            oninput="onFieldInput('${pid}','${m.id}','title',this.value)">
         </div>
         <div class="field">
           <label>기간</label>
-          <input type="text" placeholder="예: 6/1 → 6/15" value="${escapeHtml(m.period)}"
-            onchange="updateMs('${pid}','${m.id}','period',this.value)">
+          <input type="text" data-field-ref="${refBase}/period" placeholder="예: 6/1 → 6/15" value="${escapeHtml(m.period)}" ${dis}
+            oninput="onFieldInput('${pid}','${m.id}','period',this.value)">
         </div>
         <div class="field status-field">
           <label>상태</label>
-          <select onchange="updateMs('${pid}','${m.id}','status',this.value); renderAll();">
+          <select data-field-ref="${refBase}/status" ${dis} onchange="onFieldChange('${pid}','${m.id}','status',this.value)">
             ${STATUSES.map(s => `<option value="${s}" ${m.status===s?'selected':''}>${s}</option>`).join('')}
           </select>
         </div>
@@ -1120,120 +860,219 @@ function renderMilestoneCard(pid, m, idx) {
 
       <div class="field-block">
         <label>산출물 형태</label>
-        <input type="text" placeholder="예: 광고 성과 분석 리포트" value="${escapeHtml(m.output)}"
-          onchange="updateMs('${pid}','${m.id}','output',this.value)">
+        <input type="text" data-field-ref="${refBase}/output" placeholder="예: 광고 성과 분석 리포트" value="${escapeHtml(m.output)}" ${dis}
+          oninput="onFieldInput('${pid}','${m.id}','output',this.value)">
       </div>
 
       <div class="field-block">
         <label>산출물 결과값 / 진행 내용</label>
-        <textarea class="big" placeholder="국가별 데이터, 분석 결과, 액션 로그, 인사이트 등을 자유롭게 입력하세요. (Notion처럼 표 형식이나 줄바꿈 텍스트 모두 가능)"
-          onchange="updateMs('${pid}','${m.id}','deliverables',this.value)">${escapeHtml(m.deliverables)}</textarea>
+        <textarea class="big" data-field-ref="${refBase}/deliverables" ${dis} placeholder="국가별 데이터, 분석 결과, 액션 로그, 인사이트 등을 자유롭게 입력하세요."
+          oninput="onFieldInput('${pid}','${m.id}','deliverables',this.value)">${escapeHtml(m.deliverables)}</textarea>
       </div>
 
       <div class="field-block">
         <label>첨부 링크 / 파일</label>
-        <textarea placeholder="구글시트, 피그마, 노션, 쇼피 링크 등 (한 줄에 하나씩)"
-          onchange="updateMs('${pid}','${m.id}','links',this.value)">${escapeHtml(m.links)}</textarea>
+        <textarea data-field-ref="${refBase}/links" ${dis} placeholder="구글시트, 피그마, 노션, 쇼피 링크 등 (한 줄에 하나씩)"
+          oninput="onFieldInput('${pid}','${m.id}','links',this.value)">${escapeHtml(m.links)}</textarea>
       </div>
 
       <div class="field-block">
         <label>메모 및 인사이트</label>
-        <textarea placeholder="중간 검토 의견, 개선 아이디어, 다음 액션 등"
-          onchange="updateMs('${pid}','${m.id}','notes',this.value)">${escapeHtml(m.notes)}</textarea>
+        <textarea data-field-ref="${refBase}/notes" ${dis} placeholder="중간 검토 의견, 개선 아이디어, 다음 액션 등"
+          oninput="onFieldInput('${pid}','${m.id}','notes',this.value)">${escapeHtml(m.notes)}</textarea>
       </div>
 
+      ${editable ? `
       <div class="actions">
         <button class="btn" onclick="moveMs('${pid}','${m.id}',-1)">↑ 위로</button>
         <button class="btn" onclick="moveMs('${pid}','${m.id}',1)">↓ 아래로</button>
         <button class="btn" style="color:var(--red);border-color:#FCA5A5;" onclick="deleteMs('${pid}','${m.id}')">삭제</button>
-      </div>
+      </div>` : ''}
     </div>
   </div>`;
 }
 
-function toggleMs(headEl) {
-  headEl.parentElement.classList.toggle("open");
-}
+function toggleMs(headEl) { headEl.parentElement.classList.toggle("open"); }
 function expandAll(open) {
   document.querySelectorAll(".ms-card").forEach(c => {
-    if (open) c.classList.add("open");
-    else c.classList.remove("open");
+    if (open) c.classList.add("open"); else c.classList.remove("open");
   });
 }
 
-// ====== Mutations ======
-function updateMs(pid, mid, field, value) {
+// ====================================================================
+// Field edit handlers — debounced auto-save to Firebase
+// ====================================================================
+function onFieldInput(pid, mid, field, value) {
   const p = state.projects.find(x => x.id === pid);
+  if (!canEdit(p)) return;
   const m = p.milestones.find(x => x.id === mid);
   m[field] = value;
-  saveData();
-  // refresh sidebar percentages without losing focus on field
-  renderSidebar();
+
+  // Debounce: wait 500ms after typing stops
+  const key = `${pid}_${mid}_${field}`;
+  clearTimeout(saveDebounce[key]);
+  setSyncStatus("saving", "입력 중...");
+  saveDebounce[key] = setTimeout(() => {
+    const pIdx = state.projects.indexOf(p);
+    const mIdx = p.milestones.indexOf(m);
+    const updates = {};
+    updates[`projects/${pIdx}/milestones/${mIdx}/${field}`] = value;
+    pushUpdate(updates);
+  }, 500);
 }
+
+function onFieldChange(pid, mid, field, value) {
+  // Immediate save (for select/dropdown changes)
+  const p = state.projects.find(x => x.id === pid);
+  if (!canEdit(p)) return;
+  const m = p.milestones.find(x => x.id === mid);
+  m[field] = value;
+  const pIdx = state.projects.indexOf(p);
+  const mIdx = p.milestones.indexOf(m);
+  const updates = {};
+  updates[`projects/${pIdx}/milestones/${mIdx}/${field}`] = value;
+  pushUpdate(updates);
+  // Re-render to update sidebar/header badge
+  setTimeout(() => render(), 100);
+}
+
+// ====================================================================
+// Milestone CRUD
+// ====================================================================
 function moveMs(pid, mid, dir) {
   const p = state.projects.find(x => x.id === pid);
+  if (!canEdit(p)) return;
   const i = p.milestones.findIndex(x => x.id === mid);
   const j = i + dir;
   if (j < 0 || j >= p.milestones.length) return;
   [p.milestones[i], p.milestones[j]] = [p.milestones[j], p.milestones[i]];
-  saveData();
+  const pIdx = state.projects.indexOf(p);
+  writeMilestonesArray(pIdx);
   renderProject();
 }
 function deleteMs(pid, mid) {
-  if (!confirm("이 마일스톤을 삭제할까요?")) return;
   const p = state.projects.find(x => x.id === pid);
+  if (!canEdit(p)) return;
+  if (!confirm("이 마일스톤을 삭제할까요?\n(모든 팀원의 화면에서 즉시 사라집니다)")) return;
   p.milestones = p.milestones.filter(x => x.id !== mid);
-  saveData();
-  renderAll();
+  const pIdx = state.projects.indexOf(p);
+  writeMilestonesArray(pIdx);
+  render();
 }
 function addMilestone(pid) {
   const p = state.projects.find(x => x.id === pid);
-  const nums = p.milestones.map(m => parseInt((m.id.match(/\d+/)||[0])[0], 10));
+  if (!canEdit(p)) return;
+  const nums = (p.milestones || []).map(m => parseInt((m.id.match(/\d+/)||[0])[0], 10));
   const next = (Math.max(0, ...nums) + 1);
+  if (!p.milestones) p.milestones = [];
   p.milestones.push({
-    id: "M" + next,
-    title: "새 마일스톤",
-    period: "",
-    output: "",
-    status: "대기",
-    deliverables: "",
-    links: "",
-    notes: ""
+    id: "M" + next, title: "새 마일스톤", period: "", output: "",
+    status: "대기", deliverables: "", links: "", notes: ""
   });
-  saveData();
+  const pIdx = state.projects.indexOf(p);
+  writeMilestonesArray(pIdx);
   renderProject();
   renderSidebar();
-  // open the new card
   setTimeout(() => {
     const cards = document.querySelectorAll(".ms-card");
     const last = cards[cards.length - 1];
     if (last) { last.classList.add("open"); last.scrollIntoView({behavior:'smooth', block:'center'}); }
-  }, 50);
+  }, 100);
 }
 
-// ====== Navigation ======
-function goHome() {
-  currentView = { type: "home", projectId: null };
-  render();
-}
-function goProject(pid) {
-  currentView = { type: "project", projectId: pid };
-  render();
-}
+// ====================================================================
+// Navigation & Render
+// ====================================================================
+function goHome() { currentView = { type: "home", projectId: null }; render(); }
+function goProject(pid) { currentView = { type: "project", projectId: pid }; render(); }
 function render() {
+  if (!state) return;
   renderSidebar();
   if (currentView.type === "home") renderHome();
   else renderProject();
 }
-function renderAll() {
-  // Used after a status change — refresh whole UI but try to keep scroll
-  const scrollY = document.querySelector(".main").scrollTop;
-  render();
-  document.querySelector(".main").scrollTop = scrollY;
+
+// ====================================================================
+// Export
+// ====================================================================
+function exportData() {
+  const blob = new Blob([JSON.stringify(state, null, 2)], {type: "application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  const ts = new Date().toISOString().slice(0,10);
+  a.href = url;
+  a.download = `Shopee_OKR_${ts}.json`;
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
 }
 
-// Initial render
-render();
+// ====================================================================
+// Config modal
+// ====================================================================
+function openConfig() {
+  const cur = getFirebaseConfig();
+  document.getElementById("firebaseConfigInput").value = cur ? JSON.stringify(cur, null, 2) : "";
+  document.getElementById("configToast").className = "toast-status";
+  document.getElementById("configModal").classList.add("show");
+}
+function closeConfig() {
+  document.getElementById("configModal").classList.remove("show");
+}
+function saveConfig() {
+  const raw = document.getElementById("firebaseConfigInput").value.trim();
+  if (!raw) { showConfigToast("err", "설정을 입력해주세요."); return; }
+  let cfg;
+  try {
+    // Allow both pure JSON and JS-object literal (with unquoted keys)
+    cfg = looseJSONParse(raw);
+  } catch (e) {
+    showConfigToast("err", "JSON 형식 오류: " + e.message);
+    return;
+  }
+  if (!cfg.apiKey || !cfg.databaseURL) {
+    showConfigToast("err", "apiKey와 databaseURL이 필요합니다.");
+    return;
+  }
+  localStorage.setItem(STORAGE_KEYS.fbConfig, JSON.stringify(cfg));
+  showConfigToast("ok", "저장됨. 페이지를 새로고침합니다...");
+  setTimeout(() => location.reload(), 800);
+}
+function clearConfig() {
+  if (!confirm("저장된 Firebase 설정을 삭제할까요?")) return;
+  localStorage.removeItem(STORAGE_KEYS.fbConfig);
+  showConfigToast("info", "삭제됨. 페이지를 새로고침합니다...");
+  setTimeout(() => location.reload(), 800);
+}
+function showConfigToast(kind, text) {
+  const t = document.getElementById("configToast");
+  t.className = "toast-status " + kind;
+  t.textContent = text;
+}
+
+// Parse JS-style config object (keys without quotes) into JSON
+function looseJSONParse(text) {
+  let s = text.trim();
+  // Strip leading 'const X =' or 'var X ='
+  s = s.replace(/^(const|let|var)\s+\w+\s*=\s*/i, "");
+  // Strip trailing semicolon
+  s = s.replace(/;+\s*$/, "");
+  // First try strict JSON
+  try { return JSON.parse(s); } catch (e) {}
+  // Quote unquoted keys: { apiKey: "..." } -> { "apiKey": "..." }
+  s = s.replace(/([{,]\s*)([A-Za-z_$][A-Za-z0-9_$]*)\s*:/g, '$1"$2":');
+  // Convert single quotes to double quotes
+  s = s.replace(/'/g, '"');
+  return JSON.parse(s);
+}
+
+// ====================================================================
+// Init
+// ====================================================================
+document.getElementById("identitySelect").addEventListener("change", e => onIdentityChange(e.target.value));
+
+(async function init() {
+  await initFirebase();
+})();
 </script>
 </body>
 </html>
